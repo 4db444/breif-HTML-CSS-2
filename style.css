@@ -187,13 +187,13 @@ section.hero {
     right: 40px;
 }
 
-section > p, .easy-fast-description > p {
+section > p, .easy-fast-description > p, .header p {
     color: var(--secondary-text);
     font-size: 18px;
     font-weight: 600;
 }
 
-section > h2, .easy-fast-description > h2 {
+section > h2, .easy-fast-description > h2, .header h2 {
     font-family: volkhov, sans-serif;
     color: var(--primary-header);
     font-size: 50px;
@@ -384,3 +384,79 @@ section > h2, .easy-fast-description > h2 {
     left: 70px;
     z-index: 1;
 } 
+
+.what-people-say {
+    display: flex;
+    justify-content: space-between;
+}
+
+.what-people-say .title {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.what-people-say .title .points {
+    display: flex;
+    gap: 25px;
+}
+
+.what-people-say .title .points .point {
+    background-color: rgb(218, 218, 218);
+    border: none;
+    width: 10px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+}
+
+.what-people-say .title .points .point:first-of-type {
+    background-color: var(--primary-header);
+}
+
+.what-people-say .opinion {
+    display: flex;
+    gap: 6rem;
+    align-items: center;
+}
+
+.what-people-say .opinion .opinion-container{
+    position: relative;
+    padding: 30px;
+    width: 450px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgb(240, 240, 240);
+    color: var(--secondary-text);
+}
+
+.what-people-say .opinion .opinion-container img {
+    width: 65px;
+    aspect-ratio: 1/1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+}
+
+.what-people-say .opinion .opinion-container .info  {
+    font-size: 14px;
+}
+.what-people-say .opinion .opinion-container .info .name {
+    font-weight: 600;
+    font-size: 18px;
+    display: block;
+}
+
+.what-people-say .opinion .arrows {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    i:first-child {
+        color: rgb(202, 202, 202);
+    }
+}
