@@ -33,6 +33,8 @@ header {
     top: 0;
     left: 0;
     z-index: 999;
+    box-shadow: 0 0 10px rgb(228, 228, 228);
+    background-color: var(--bg-color);
 }
 
 header .logo {
@@ -59,7 +61,7 @@ main {
 }
 
 section, header, footer {
-    padding: 20px 10%;
+    padding: 7px 10%;
 }
 
 section:not(.hero) {
@@ -672,7 +674,7 @@ footer > p {
     position: relative;
 }
 
-.destination section h1, .contact h1 {
+.destination section h1, .contact h1, .about h1 {
     font-size: 50px;
     text-align: center;
     font-family: volkhov;
@@ -842,9 +844,51 @@ footer > p {
     z-index: -9;
 }
 
+    /* about */
+
+.about{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.about section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: initial;
+    position: relative;
+}
+
+.about .history .vector{
+    left: 0;
+    top: 0;
+}
+
+.about .our-mission .vector {
+    top: 0;
+    right: 0;
+}
+
+.about section h2 {
+    margin-bottom: 15px;
+    margin-left: -2rem;
+    color: var(--red-color);
+    font-size: 32px;
+}
+
+.about section p {
+    font-size: 20px;
+    color: var(--secondary-text);
+    max-width: 660px;
+    text-indent: 3rem;
+}
 
 @media (max-width: 1200px){
     section, header, footer {
-        padding: 20px 20px;
+        padding: 7px 20px;
     }
 }
